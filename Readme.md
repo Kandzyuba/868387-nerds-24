@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Nikita](https://up.htmlacademy.ru/htmlcss/24/user/868387).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
