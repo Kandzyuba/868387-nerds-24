@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип Нёрдса">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
@@ -17,7 +17,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul>
-          <li class="#">Корзина</li>
+          <li class="#"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -30,6 +30,57 @@
             <span class="scroll">От до</span>
           </li>
         </ul>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+          <p>Сетка:</p>
+          <ul>
+            <li>
+              <label class="filter-radio">
+                <input type="radio" name="grid-group" value="adaptive">Адаптивная
+              </label>  
+            </li>
+            <li>
+              <label class="filter-radio">
+                <input type="radio" name="grid-group" value="fixed">Фиксированная
+              </label>  
+            </li>
+            <li>
+              <label class="filter-radio">
+                <input type="radio" name="grid-group" value="rubber">Резиновая
+              </label>  
+            </li>            
+          </ul>
+          <p>Особенности:</p>
+          <ul>
+            <li>
+              <label class="filter-check">
+                <input type="checkbox" name="slider" checked>Слайдер
+              </label>  
+            </li>
+            <li>
+              <label class="filter-check">
+                <input type="checkbox" name="advantage">Блок преимуществ
+              </label>  
+            </li>
+            <li>
+              <label class="filter-check">
+                <input type="checkbox" name="news" checked>Новости
+              </label>  
+            </li>     
+            <li>
+              <label class="filter-check">
+                <input type="checkbox" name="galerie">Галерея
+              </label>  
+            </li>
+            <li>
+              <label class="filter-check">
+                <input type="checkbox" name="basket">Корзина
+              </label>  
+            </li>      
+          </ul>
+          <p class="filter-button">
+            <button class="button" type="submit">Показать</button>
+          </p> 
+        </form>
       </section>
       <secion class="store">
         <div class="sort">
@@ -42,7 +93,7 @@
         </div>
         <ul class="works">
           <li>
-            <img src="img/sedona.jpg" width="360px" height="576px" alt="Фото"></a>
+            <img src="img/sedona.jpg" width="360" height="576" alt="Фото"></a>
             <div class="work-1">              
               <h3><a href="#">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
@@ -50,7 +101,7 @@
             </div>
           </li>
           <li>
-            <img src="img/pink.jpg" width="360px" height="576px" alt="Фото"></a>
+            <img src="img/pink.jpg" width="360" height="576" alt="Фото"></a>
             <div class="work-2">
               <h3><a href="#">Pink APP</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -58,7 +109,7 @@
             </div>
           </li>
           <li>
-            <img src="img/barbershop.jpg" width="360px" height="576px" alt="Фото">
+            <img src="img/barbershop.jpg" width="360" height="576" alt="Фото">
             <div class="work-3">
               <h3><a href="#">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -66,7 +117,7 @@
             </div>
           </li>
           <li>
-            <img src="img/mishka.jpg" width="360px" height="576px" alt="Фото">
+            <img src="img/mishka.jpg" width="360" height="576" alt="Фото">
             <div class="work-4">
               <h3><a href="#">Mishka</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
@@ -74,7 +125,7 @@
             </div>
           </li>
           <li>
-            <img src="img/aplus.jpg" width="360px" height="576px" alt="Фото">
+            <img src="img/aplus.jpg" width="360" height="576" alt="Фото">
             <div class="work-5">
               <h3><a href="#">A Plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
@@ -82,7 +133,7 @@
             </div>
           </li>
           <li>
-            <img src="img/kvast.jpg" width="360px" height="576px" alt="Фото">
+            <img src="img/kvast.jpg" width="360" height="576" alt="Фото">
             <div class="work-6">             
               <h3><a href="#">Кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -104,7 +155,7 @@
           <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</address>
           <a href="#">Напишите нам</a>
         </div>
-        <img src="img/map.jpg" width="1440px" height="416px" alt="Карта">
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
       </section>
     </main>
     <footer>
@@ -118,5 +169,25 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <section class="feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="feedback-name">
+          <p class="feedback-item">Ваше имя:</p>
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>  
+        <label class="feedback-email">
+          <p class="feedback-item">Ваш e-mail:</p>
+          <input type="text" name="email" placeholder="email@example.com">
+        </label> 
+        <label class="feedback-content">
+          <p class="feedback-item">Текст письма:</p>
+          <textarea name="content" placeholder="В свободной форме"></textarea>
+        </label> 
+        <p class="feedback-button">
+          <button class="button" type="submit">Отправить</button>
+        </p>
+      </form>
+    </section>
   </body>
 </html>
