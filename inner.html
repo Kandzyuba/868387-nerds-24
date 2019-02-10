@@ -31,55 +31,49 @@
           </li>
         </ul>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
-          <p>Сетка:</p>
-          <ul>
-            <li>
-              <label class="filter-radio">
-                <input type="radio" name="grid-group" value="adaptive">Адаптивная
-              </label>  
-            </li>
-            <li>
-              <label class="filter-radio">
-                <input type="radio" name="grid-group" value="fixed">Фиксированная
-              </label>  
-            </li>
-            <li>
-              <label class="filter-radio">
-                <input type="radio" name="grid-group" value="rubber">Резиновая
-              </label>  
-            </li>            
-          </ul>
-          <p>Особенности:</p>
-          <ul>
-            <li>
-              <label class="filter-check">
-                <input type="checkbox" name="slider" checked>Слайдер
-              </label>  
-            </li>
-            <li>
-              <label class="filter-check">
-                <input type="checkbox" name="advantage">Блок преимуществ
-              </label>  
-            </li>
-            <li>
-              <label class="filter-check">
-                <input type="checkbox" name="news" checked>Новости
-              </label>  
-            </li>     
-            <li>
-              <label class="filter-check">
-                <input type="checkbox" name="galerie">Галерея
-              </label>  
-            </li>
-            <li>
-              <label class="filter-check">
-                <input type="checkbox" name="basket">Корзина
-              </label>  
-            </li>      
-          </ul>
-          <p class="filter-button">
-            <button class="button" type="submit">Показать</button>
-          </p> 
+          <fieldset>
+            <legend>Сетка:</legend>    
+            <ul>
+              <li>
+                <input type="radio" id="filter-adaptive" name="grid-group" value="adaptive">
+                <label for="filter-adaptive">Адаптивная</label> 
+              </li>
+              <li>
+                <input type="radio" id="filter-fixed" name="grid-group" value="fixed">
+                <label for="filter-fixed">Фиксированная</label>  
+              </li>
+              <li> 
+                <input type="radio" id="filter-rubber" name="grid-group" value="rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>            
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>    
+            <ul>
+              <li>
+                <input type="checkbox" id="filter-slider" name="slider" checked>
+                <label for="filter-slider">Слайдер</label>  
+              </li>
+              <li>
+                <input type="checkbox" id="filter-advantage" name="advantage">
+                <label for="filter-advantage">Блок преимуществ</label>  
+              </li>
+              <li>
+                <input type="checkbox" id="filter-news" name="news" checked>
+                <label for="filter-news">Новости</label>  
+              </li>     
+              <li>
+                <input type="checkbox" id="filter-galerie" name="galerie">
+                <label for="filter-galerie">Галерея</label>  
+              </li>
+              <li>
+                <input type="checkbox" id="filter-basket" name="basket">
+                <label for="filter-basket">Корзина</label>  
+              </li>      
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
         </form>
       </section>
       <secion class="store">
@@ -172,21 +166,19 @@
     <section class="feedback">
       <h2>Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-        <label class="feedback-name">
-          <p class="feedback-item">Ваше имя:</p>
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>  
-        <label class="feedback-email">
-          <p class="feedback-item">Ваш e-mail:</p>
-          <input type="text" name="email" placeholder="email@example.com">
-        </label> 
-        <label class="feedback-content">
-          <p class="feedback-item">Текст письма:</p>
-          <textarea name="content" placeholder="В свободной форме"></textarea>
-        </label> 
-        <p class="feedback-button">
-          <button class="button" type="submit">Отправить</button>
+        <p>
+          <label for="feedback-name">Ваше имя:</label> 
+          <input type="text" for="feedback-name" name="name" placeholder="Имя Фамилия">
         </p>
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label> 
+          <input type="text" id="feedback-email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="feedback-content">Текст письма:</label> 
+          <textarea id="feedback-content" name="content" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
       </form>
     </section>
   </body>
