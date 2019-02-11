@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,11 +16,11 @@
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li class="active-page"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul>
-          <li class="#"><a href="#">Корзина</a></li>
+          <li class="basket"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +35,7 @@
         </ul>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset>
-            <legend>Сетка:</legend>    
+            <legend class="transform">Сетка:</legend>    
             <ul>
               <li>
                 <input type="radio" id="filter-adaptive" name="grid-group" value="adaptive">
@@ -49,7 +52,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>    
+            <legend class="transform">Особенности:</legend>    
             <ul>
               <li>
                 <input type="checkbox" id="filter-slider" name="slider" checked>
@@ -89,49 +92,49 @@
           <li>
             <img src="img/sedona.jpg" width="360" height="576" alt="Фото"></a>
             <div class="work-1">              
-              <h3><a href="#">Sedona</a></h3>
+              <h3 class="transform"><a href="#">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
-              <a href="#">9900 руб.</a>
+              <a class="button" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/pink.jpg" width="360" height="576" alt="Фото"></a>
             <div class="work-2">
-              <h3><a href="#">Pink APP</a></h3>
+              <h3 class="transform"><a href="#">Pink APP</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#">9900 руб.</a>
+              <a class="button" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/barbershop.jpg" width="360" height="576" alt="Фото">
             <div class="work-3">
-              <h3><a href="#">Barbershop</a></h3>
+              <h3 class="transform"><a href="#">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a href="#">9900 руб.</a>
+              <a class="button" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/mishka.jpg" width="360" height="576" alt="Фото">
             <div class="work-4">
-              <h3><a href="#">Mishka</a></h3>
+              <h3 class="transform"><a href="#">Mishka</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#">9900 руб.</a>
+              <a class="button" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/aplus.jpg" width="360" height="576" alt="Фото">
             <div class="work-5">
-              <h3><a href="#">A Plus</a></h3>
+              <h3 class="transform"><a href="#">A Plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9900 руб.</a>
+              <a class="button" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/kvast.jpg" width="360" height="576" alt="Фото">
             <div class="work-6">             
-              <h3><a href="#">Кваст</a></h3>
+              <h3 class="transform"><a href="#">Кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#">9900 руб.</a>
+              <a class="button" href="#">9900 руб.</a>
             </div>
           </li>
         </ul>
@@ -145,9 +148,9 @@
       <section class="map">
         <h2 class="visually-hidden">Организация на карте</h2>
         <div class="address">
-          <h3>NЁRDS DESIGN STUDIO</h3>
+          <h3 class="transform">NЁRDS DESIGN STUDIO</h3>
           <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</address>
-          <a href="#">Напишите нам</a>
+          <a class="button" href="#">Напишите нам</a>
         </div>
         <img src="img/map.jpg" width="1440" height="416" alt="Карта">
       </section>
