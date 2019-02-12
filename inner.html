@@ -10,17 +10,17 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="header-logo" href="index.html">
+        <a class="main-navigation__logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
         </a>
-        <ul class="site-navigation">
+        <ul class="list-disabled main-navigation__pages">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li class="active-page"><a href="#">Магазин</a></li>
+          <li><a href="#" class="inner-active">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
-          <li class="basket"><a href="#">Корзина</a></li>
+        <ul class="list-disabled main-navigation__basket">
+          <li ><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -29,13 +29,13 @@
       <section class="filter">
         <ul>
           <li>
-            <h2>Стоимость:</h2>
+            <h2 class="filter-form__legend">Стоимость:</h2>
             <span class="scroll">От до</span>
           </li>
         </ul>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset>
-            <legend class="transform">Сетка:</legend>    
+            <legend class="filter-form__legend"><p>Сетка:</p></legend>    
             <ul>
               <li>
                 <input type="radio" id="filter-adaptive" name="grid-group" value="adaptive">
@@ -52,7 +52,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="transform">Особенности:</legend>    
+            <legend class="filter-form__legend"><p>Особенности:</p></legend>    
             <ul>
               <li>
                 <input type="checkbox" id="filter-slider" name="slider" checked>
@@ -76,12 +76,12 @@
               </li>      
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button pages__button" type="submit">Показать</button>
         </form>
       </section>
       <secion class="store">
         <div class="sort">
-          <b>Сортировать:</b>
+          <b class="filter-form__legend">Сортировать:</b>
           <ul class="sort-type">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
@@ -92,70 +92,70 @@
           <li>
             <img src="img/sedona.jpg" width="360" height="576" alt="Фото"></a>
             <div class="work-1">              
-              <h3 class="transform"><a href="#">Sedona</a></h3>
+              <h3>Sedona</h3>
               <p>Информационный сайт для туристов</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button services__button-1" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/pink.jpg" width="360" height="576" alt="Фото"></a>
             <div class="work-2">
-              <h3 class="transform"><a href="#">Pink APP</a></h3>
+              <h3>Pink APP</h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button services__button-1" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/barbershop.jpg" width="360" height="576" alt="Фото">
             <div class="work-3">
-              <h3 class="transform"><a href="#">Barbershop</a></h3>
+              <h3>Barbershop</h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button services__button-1" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/mishka.jpg" width="360" height="576" alt="Фото">
             <div class="work-4">
-              <h3 class="transform"><a href="#">Mishka</a></h3>
+              <h3>Mishka</h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button services__button-1" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/aplus.jpg" width="360" height="576" alt="Фото">
             <div class="work-5">
-              <h3 class="transform"><a href="#">A Plus</a></h3>
+              <h3>A Plus</h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button services__button-1" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/kvast.jpg" width="360" height="576" alt="Фото">
             <div class="work-6">             
-              <h3 class="transform"><a href="#">Кваст</a></h3>
+              <h3>Кваст</h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button services__button-1" href="#">9900 руб.</a>
             </div>
           </li>
         </ul>
         <ul class="pages">
-          <li><a href=#>1</a></li>
-          <li><a href=#>2</a></li>
-          <li><a href=#>3</a></li>
-          <li><a href=#>Следующая</a></li>
+          <li><a class="button pages__button" href=#>1</a></li>
+          <li><a class="button pages__button" href=#>2</a></li>
+          <li><a class="button pages__button" href=#>3</a></li>
+          <li><a class="button pages__button" href=#>Следующая</a></li>
         </ul>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Организация на карте</h2>
         <div class="address">
           <h3 class="transform">NЁRDS DESIGN STUDIO</h3>
-          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</address>
-          <a class="button" href="#">Напишите нам</a>
+          <address class="map__contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</address>
+          <a class="button services__button-1" href="#">Напишите нам</a>
         </div>
         <img src="img/map.jpg" width="1440" height="416" alt="Карта">
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <ul class="footer-social">
         <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
         <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
