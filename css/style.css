@@ -8,7 +8,6 @@ body {
     font-weight: 500;
     line-height: 24px;
     color: #000000;
-    border: 2px solid black;
 
     background-color: #ffffff;
 }
@@ -57,12 +56,19 @@ a {
     padding-left: 10px;
 }
 
-.feedback, .visually-hidden {
+.visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+    left: 0;
+    top: 0;
+
+}
+
+.visually-none {
+    display: none;
 }
 
 .list-disabled {
