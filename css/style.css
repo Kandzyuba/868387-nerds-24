@@ -683,10 +683,6 @@ a {
     opacity: 0.3;
 }
 
-.works li:first-child::before {
-    opacity: 1;
-}
-
 .works li:hover::before {
     opacity: 1;
 }
