@@ -1176,7 +1176,6 @@ a {
 .modal-close {
     position: absolute;
     margin: 0;
-    background-color: green;
     background: url("../img/close-cross.svg") no-repeat;
     background-size: 21px 21px;
     top: 50px;
@@ -1188,3 +1187,52 @@ a {
     border: 0;
     font-size: 0;
 }
+
+.modal-show {
+    display: block;
+    animation: bounce 0.5s;
+}
+
+.modal-error {
+    animation: shake 0.3s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-100px);
+    }
+  
+    70% {
+      transform: translateY(20px);
+    }
+  
+    90% {
+      transform: translateY(60px);
+    }
+  
+    100% {
+      transform: translateY(90px);
+    }
+  }
+  
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
