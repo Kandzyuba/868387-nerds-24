@@ -3,7 +3,7 @@
   var popup = document.querySelector(".feedback");
   var close = popup.querySelector(".modal-close");
   
-  var form = popup.querySelector("feedback-form");
+  var form = popup.querySelector(".feedback-form");
   var login = popup.querySelector("[name=name]");
   var email = popup.querySelector("[name=email]");
   var content = popup.querySelector("[name=content]");
@@ -27,6 +27,12 @@
     } else {
       login.focus();
     }
+    if (storage) {
+      email.value = storage;
+      content.focus();
+    } else {
+      email.focus();
+    }
   });
 
   close.addEventListener("click", function (evt) {
@@ -36,7 +42,7 @@
   });
 
   form.addEventListener("submit", function (evt) {
-    if (!login.value || !email.value) {
+    if (!login.value || !email.value || !content.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
