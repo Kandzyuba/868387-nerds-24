@@ -625,11 +625,24 @@ a {
     justify-content: space-between;
 }
 
+
 .partners li {
+    position: relative;
     width: 260px;
     padding: 0px;
     margin: 0px;
 }
+
+.partner::after {
+    position: absolute;
+    content: "";
+    top: 63px;
+    right: -21px;
+    width: 2px;
+    height: 52px;
+    background: #eeeeee;
+}
+
 
 .partners a {
     opacity: 0.2;
