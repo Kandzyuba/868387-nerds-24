@@ -11,7 +11,7 @@
     <header class="main-header index-header">
         <div class="complex">
             <nav class="main-navigation">
-                <ul class="list-disabled main-navigation__pages ">
+                <ul class="list-disabled main-navigation__pages">
                     <li>
                         <a class="main-navigation__logo">
                             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
@@ -46,18 +46,18 @@
                         <b>Долго, дорого,<br> скрупулезно.</b>
                         <p>Математически выверенный дизайн
                             <br> для вашего сайта или мобильного приложения.</p>
-                        <a href="#" class="button services__button-1 slider-button">Узнать больше</a>
+                        <a href="#" class="button services__button-web slider-button">Узнать больше</a>
                     </li>
                     <li class="slider-item">
                         <b>Любим математику как никто другой</b>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                        <a href="#" class="button services__button-1 slider-button">Узнать больше</a>
+                        <a href="#" class="button services__button-web slider-button">Узнать больше</a>
                     </li>
                     <li class="slider-item">
                         <b>Только ночь,<br> только хардкор</b>
                         <p>Работать днем, как все? Мы против этого.
                             <br> Ближе к полуночи работа только начинается.</p>
-                        <a href="#" class="button services__button-1 slider-button">Узнать больше</a>
+                        <a href="#" class="button services__button-web slider-button">Узнать больше</a>
                     </li>
                 </ul>
             </div>
@@ -69,17 +69,17 @@
                     <li class="services__list">
                         <h3>Веб-сайты</h3>
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                        <a href="#" class="button services__button-1">Заказать</a>
+                        <a href="#" class="button services__button-web">Заказать</a>
                     </li>
                     <li class="services__list">
                         <h3>Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a href="#" class="button services__button-2">Заказать</a>
+                        <a href="#" class="button services__button-app">Заказать</a>
                     </li>
                     <li class="services__list">
                         <h3>Презентации</h3>
                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a href="#" class="button services__button-3">Заказать</a>
+                        <a href="#" class="button services__button-presentation">Заказать</a>
                     </li>
                 </ul>
             </section>
@@ -97,7 +97,7 @@
                 <div class="features__item">
                     <img src="img/nerds-illustration.png" width="360" height="208" alt="logo-2">
                     <p class="transform-upper">с 2004 года Любим точность во всем:</p>
-                    <ul class="item-2">
+                    <ul class="item-description">
                         <li><span>146</span> Уровень самоотдачи</li>
                         <li><span>100</span> Соблюдение сроков</li>
                         <li class="prepay"><span>50</span> Минимальная предоплата</li>
@@ -120,16 +120,19 @@
                     </li>
                 </ul>
             </div>
-            <section class="map">
-                <h2 class="visually-hidden">Организация на карте</h2>
-                <div class="address">
-                    <h3 class="transform-upper">NЁRDS DESIGN STUDIO</h3>
-                    <address class="map__contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <p>тел. +7 (812) 275-75-75</p></address>
-                    <a class="button services__button-1 map-button" href="write-us.html">Напишите нам</a>
-                </div>
-                <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A423168a55f79b2e0d128a48a662db64b5742306ae0869d2b37e4e410f4ce99a5&amp;source=constructor" width="1440" height="416"></iframe>
-            </section>
         </div>
+        <section class="map">
+            <h2 class="visually-hidden">Организация на карте</h2>
+            <div class="map-static-container">
+                <div class="address">
+                    <h3 class="transform">NЁRDS DESIGN STUDIO</h3>
+                    <address class="map__contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <p>тел. +7 (812) 275-75-75</p></address>
+                    <a class="button services__button-web map-button" href="write-us.html">Напишите нам</a>
+                </div> 
+                <p class="map-static"><img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+            </div>
+            <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A423168a55f79b2e0d128a48a662db64b5742306ae0869d2b37e4e410f4ce99a5&amp;source=constructor" width="1440" height="416"></iframe>
+        </section>
     </main>
     <footer class="main-footer">
         <ul class="footer-social">
@@ -178,7 +181,7 @@
                 <label for="feedback-content">Текст письма:</label>
                 <textarea id="feedback-content" name="content" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="button services__button-1" type="submit">Отправить</button>
+            <button class="button services__button-web" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>

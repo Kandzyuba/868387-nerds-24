@@ -1,32 +1,31 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
-    width: 1440px;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: #000000;
     background-color: #ffffff;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
 
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 .main-header,
 .container,
 .footer {
-    width: 1440px;
     padding: 0;
     margin: 0 auto;
 }
@@ -140,6 +139,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     width: 800px;
     -webkit-box-pack: justify;
@@ -224,7 +225,7 @@ a {
 
 .slider__wraper {
     position: relative;
-    width: 1440px;
+
     padding: 0;
     margin: 0 auto;
     background-color: #e1e1e1;
@@ -371,6 +372,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
     padding-right: 60px;
@@ -435,35 +438,35 @@ a {
     color: rgb(255, 255, 255, 0.3);
 }
 
-.services__button-1:hover {
+.services__button-web:hover {
     background-color: #e74246;
 }
 
-.services__button-1:active,
-.services__button-1:focus {
+.services__button-web:active,
+.services__button-web:focus {
     background-color: #d7373b;
     color: rgb(255, 255, 255, 0.3);
     -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.services__button-2:hover {
+.services__button-app:hover {
     background-color: #00bc6c;
 }
 
-.services__button-2:active,
-.services__button-2:focus {
+.services__button-app:active,
+.services__button-app:focus {
     background-color: #00aa62;
     -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.services__button-3:hover {
+.services__button-presentation:hover {
     background-color: #eab534;
 }
 
-.services__button-3:active,
-.services__button-3:focus {
+.services__button-presentation:active,
+.services__button-presentation:focus {
     background-color: #e5a722;
     -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1)
@@ -547,7 +550,7 @@ a {
     margin-bottom: 36px;
 }
 
-.features:nth-child(2) .item-2 {
+.features:nth-child(2) .item-description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -562,7 +565,7 @@ a {
     padding-left: 0;
 }
 
-.item-2 li {
+.item-description li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -577,11 +580,11 @@ a {
     margin-top: 8px;
 }
 
-.item-2:nth-child(2) {
+.item-description:nth-child(2) {
     padding-left: 40px;
 }
 
-.item-2 span {
+.item-description span {
     position: relative;
     font-size: 45px;
     font-weight: 700;
@@ -589,7 +592,7 @@ a {
     padding-bottom: 38px;
 }
 
-.item-2 span::after {
+.item-description span::after {
     position: absolute;
     content: "%";
     font-size: 25px;
@@ -618,6 +621,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     padding: 0;
     -webkit-box-pack: justify;
@@ -659,14 +664,39 @@ a {
 
 .map {
     position: relative;
-    width: 1440px;
+
     padding: 0px;
     margin: 0 auto;
-    margin-left: -140px;
     margin-top: 75px;
 }
 
-.map::after {
+.map-static-container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.map-static {
+    position: absolute;
+    top: 0;
+    left: -118px;
+    z-index: 1;
+    width: 1440px;
+  
+    margin: 0;
+}
+  
+.map iframe {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 416px;
+  
+    border: none;
+}
+
+.map-static-container::after {
     position: absolute;
     content: "";
     width: 231px;
@@ -674,8 +704,8 @@ a {
     background: url("../img/map-marker.png") no-repeat 0 0;
     background-size: 231px 190px;
     top: 90px;
-    left: 820px;
-    z-index: 2;
+    left: 698px;
+    z-index: 10;
 }
 
 .map h3 {
@@ -701,9 +731,10 @@ a {
     margin: 0;
     width: 319px;
     padding: 0 50px;
-    top: 54px;
-    left: 140px;
+    top: 53px;
+    left: 21px;
     background-color: #ffffff;
+    z-index: 5;
 }
 
 .map-button {
@@ -768,10 +799,12 @@ a {
 }
 
 .work-title {
+    display: block;
     font-size: 18px;
     font-weight: 700px;
     line-height: 30px;
-    margin-top: 25px;
+    margin-top: 29px;
+    margin-bottom: 15px;
     text-transform: uppercase;
 }
 
@@ -902,10 +935,6 @@ a {
     background-position: center center;
     background-size: 11px 10px;
     margin-top: 5px;
-}
-
-.link-first {
-    color: #000000;
 }
 
 .link-down {
@@ -1073,10 +1102,20 @@ a {
     color: #283136;
 }
 
+.silence {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+    left: 850px;
+}
+
 .filter-option label {
     position: relative;
     padding-left: 10px;
     margin-left: 20px;
+    color: #283136;
 }
 
 .filter-input-radio + label::before {
@@ -1086,8 +1125,9 @@ a {
     height: 25px;
     background: url("../img/radio-off.svg") no-repeat;
     background-size: 25px 25px;
-    left: -22px;
-    top: 0px;
+    left: -27px;
+    top: -3px;
+    opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1097,8 +1137,9 @@ a {
     height: 25px;
     background: url("../img/radio-on.svg") no-repeat;
     background-size: 25px 25px;
-    left: -22px;
-    top: 0px;
+    left: -27px;
+    top: -3px;
+    opacity: 0.4;
 }
 
 .filter-input-checkbox + label::before {
@@ -1107,13 +1148,15 @@ a {
     width: 27px;
     height: 23px;
     background: url("../img/checkbox-off.svg") no-repeat;
-    background-size: 27px 23px;
-    left: -22px;
-    top: 0px;
+    background-size: 24px 23px;
+    left: -24px;
+    top: -1px;
+    opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::before {
     background: none;
+    opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1122,9 +1165,22 @@ a {
     width: 27px;
     height: 23px;
     background: url("../img/checkbox-on.svg") no-repeat;
-    background-size: 27px 23px;
-    left: -20px;
-    top: 0px;
+    background-size: 28px 23px;
+    left: -24px;
+    top: -1px;
+    opacity: 0.4;
+}
+
+.filter-option label:hover::before,
+.filter-option label:hover::after {
+    opacity: 1;
+}
+
+.filter-input-radio:focus  + label::before,
+.filter-input-radio:focus  + label::after,
+.filter-input-checkbox:focus  + label::before,
+.filter-input-checkbox:focus  + label::after {
+    opacity: 1;
 }
 
 .main-footer {
@@ -1149,6 +1205,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1273,6 +1331,21 @@ a {
     padding-left: 15px;
     line-height: 18px;
     font-weight: 400;
+    border: solid 2px #d7dcde;
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback input:hover,
+.feedback textarea:hover {
+    color: rgba(68, 68, 68, 0.5);
+    border: solid 2px #b4b9bb;
+    opacity: 0.5;
+}
+
+.feedback input:focus,
+.feedback textarea:focus {
+    border: solid 2px black;
+    color: #444444;
 }
 
 .feedback textarea {
@@ -1285,6 +1358,8 @@ a {
     padding-left: 15px;
     line-height: 18px;
     font-weight: 400;
+    border: solid 2px #d7dcde;
+    color: rgba(68, 68, 68, 0.5);
 }
 
 .feedback-form button {
@@ -1306,6 +1381,15 @@ a {
     cursor: pointer;
     border: 0;
     font-size: 0;
+    opacity: 0.3;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
 }
 
 .modal-show {
@@ -1317,6 +1401,40 @@ a {
 .modal-error {
     -webkit-animation: shake 0.3s;
     animation: shake 0.3s;
+}
+
+
+.modal-error input,
+.modal-error textarea {
+    border: solid 2px #e74246;
+}
+
+.modal-error input::-webkit-input-placeholder,
+.modal-error textarea::-webkit-input-placeholder {
+    color: #e74246;
+    opacity: 1;
+}
+
+.modal-error input:-ms-input-placeholder,
+.modal-error textarea:-ms-input-placeholder {
+    color: #e74246;
+    opacity: 1;
+}
+
+.modal-error input::-ms-input-placeholder,
+.modal-error textarea::-ms-input-placeholder {
+    color: #e74246;
+    opacity: 1;
+}
+
+.modal-error input::placeholder,
+.modal-error textarea::placeholder {
+    color: #e74246;
+    opacity: 1;
+}
+
+.sort-type .link-first {
+    color: #000000;
 }
 
 @-webkit-keyframes bounce {
